@@ -54,12 +54,14 @@
   
   "dependencies": {
     "R": [
-      {"name": "move"},
+      {"name": "move2"},
       {"name": "sf"},
       {"name": "osmdata"},
       {"name": "ggplot2"},
       {"name": "units"},
-      {"name": "devtools"}
+      {"name": "mapview"},
+      {"name": "devtools"},
+      {"name": "wildlifeHI"}
     ]
   },
   "createsArtifacts": true,
@@ -84,6 +86,16 @@
       "orcid": "0000-0003-3961-3085",
       "affiliation": "Western University",
       "affiliationRor": "02grkyz14"
+    },
+    {
+      "firstName": "Matthew",
+      "middleInitials": null,
+      "lastName": "Ketchin",
+      "email": "mketchin@uwo.ca",
+      "roles": [
+        "contributor"
+      ],
+      "affiliation": "Western University"
     }
   ],
   "funding": [

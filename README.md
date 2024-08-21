@@ -17,13 +17,17 @@ The OSM value, which is essentially the typology of features within a given OSM 
 The geom argument can be used to focus on a specific geometry type: one of 'point', 'line' (the default), or 'polygon'. The poly2line argument is used to convert polygon features to lines, useful when studying distance-to-boundary problems.
 
 
-### Input data
+### Input type
 
-MoveStack in Movebank format
+`move2::move2_loc`
 
-### Output data
+### Output type
 
-MoveStack in Movebank format with three additional columns:
+`move2::move2_loc` 
+
+
+### Changes in output data
+The app adds three additional columns to the input data:
 - nearest_key - the OSM key of the nearest feature
 - nearest_value - the OSM value of the nearest feature
 - nearest_distance - the distance to the nearest OSM feature in appropriate units
@@ -52,4 +56,4 @@ MoveStack in Movebank format with three additional columns:
 
 ### Null or error handling
 
-***Input MoveStack:** If input data is of class: "Move", it is automatically converted to a "MoveStack". If it is another type of object the function returns NULL. 
+***Input MoveStack:** If input data is not o fthe correct type but it is mutable, an attempt to automatically convert to a `move2::move2_loc` is made. If it is another type of object the function returns NULL. 

@@ -1,10 +1,10 @@
 library('move2')
 library('sf')
 library('osmdata')
-library('devtools')
 library('ggplot2')
 library('units')
 library('mapview')
+library('devtools')
 #devtools::install_github('jedalong/wildlifeHI')
 library('wildlifeHI')
 
@@ -41,7 +41,7 @@ rFunction = function(data,r=r,key=key,value=value,geom=geom,poly2line=poly2line)
   csvName <- paste0('DistanceAnalysisTable_r_',r,'.csv')
   write.csv(dtab,appArtifactPath(csvName),row.names=TRUE)
   
-  #return movestack
+  #return move2 with info appended
   return(move_dist)
 }
 
