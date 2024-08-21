@@ -5,12 +5,12 @@ library('ggplot2')
 library('units')
 library('mapview')
 library('devtools')
-#devtools::install_github('jedalong/wildlifeHI')
+devtools::install_github('jedalong/wildlifeHI')
 library('wildlifeHI')
 
 rFunction = function(data,r=r,key=key,value=value,geom=geom,poly2line=poly2line) {
   
-  #call hi_dostance from package
+  #call hi_distance from package
   if (value == 'all'){
     move_dist <- hi_distance(move=data,key=key,geom=geom,poly2line=poly2line)
   } else {
