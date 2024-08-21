@@ -60,8 +60,7 @@
       {"name": "ggplot2"},
       {"name": "units"},
       {"name": "mapview"},
-      {"name": "devtools"},
-      {"name": "wildlifeHI"}
+      {"name": "devtools"}
     ]
   },
   "createsArtifacts": true,
