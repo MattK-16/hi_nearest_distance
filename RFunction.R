@@ -17,7 +17,7 @@ hi_distance_local <- function(move,osmdata,...){
   }
   
   if (missing(osmdata)){
-    osmdata <- hi_get_osm(move, ...)
+    osmdata <- hi_get_osm_local(move, ...)
   }
   
   move$nearest_key <- NA
@@ -44,7 +44,7 @@ hi_distance_local <- function(move,osmdata,...){
   return(move)
 }
 
-hi_get_osm <- function(move,key='highway',value,bbox,geom="line",poly2line=TRUE){
+hi_get_osm_local <- function(move,key='highway',value,bbox,geom="line",poly2line=TRUE){
   
   #check if move2
   if(!inherits(move, "move2")){
